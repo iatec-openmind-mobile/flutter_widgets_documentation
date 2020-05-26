@@ -41,6 +41,7 @@ O construtor padrão recebe na propriedade `children` uma lista explícita de wi
 ```
     
 Resultado:
+
 ![](../assets/list_view_example.png)
  
  ### 2 - ListView.builder()
@@ -73,6 +74,7 @@ Resultado:
 Como podemos observar na imagem abaixo, não há mudanças visuais em comparação ao exemplo anterior.
     
 Resultado:
+
 ![](../assets/list_view_example.png)
 
  ### 3 - ListView.separated()
@@ -105,6 +107,7 @@ O construtor ListView.separated usa dois `IndexedWidgetBuilders`: O `itemBuilder
 ```
     
 Resultado:
+
 ![](../assets/list_view_separated_example.png)
 
  ### 3 - ListView.custom()
