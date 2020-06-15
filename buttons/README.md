@@ -44,6 +44,7 @@ Os botões especiais são chamados dessa forma porque, em vez de ter o comportam
 
 São estes:
 
+* ToggleButtons
 * PopupMenuButton
 * DropdownButton
 
