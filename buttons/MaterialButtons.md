@@ -32,10 +32,29 @@ A elevação é um [conceito fundamental no design do Material](https://material
 
 ![ElevationSample](https://lh3.googleusercontent.com/LA3KMKKDDN_gzLu73HQhPw5nyA_vvP3kMOZp4gcznbCCHbcCXgB5hjmmUxfzpoJfxpAWyq2eQvIpHjSQ0IrDhdnFHpwIJGFC6vHc=w1064-v0 "Exemplo de diferentes elevações no Material")
 
-A propriedade `elevation` recebe um `double` que descreve a eleveção visual do botão em relação ao pano de fundo. O seu valor padrão é 2, o que é próprio para RaisedButton. Quanto maior o valor, mais elevado será o botão. Quando zero (0), o botão não terá elevação nenhum, como um FlatButton.
+A propriedade `elevation` recebe um `double` que descreve a eleveção visual do botão em relação ao pano de fundo. O seu valor padrão é `2.0`, o que é próprio para RaisedButton. Quanto maior o valor, mais elevado será o botão. Quando zero (0), o botão não terá elevação nenhum, como um FlatButton.
 
 ### `color` e `disabledColor`
 
+Como o nome sugere, as propriedades `color` e `disabledColor` recebem `Color`s para definir, respectivamente, a cor do botão quando em seu estado normal e quando desativado. Caso você queira seguir o padrão Material, não há necessidade de passar um `disabledColor`, já que o padrão cinza do Material será usado.
+
+A propriedade `color`, por sua vez, terá como valor _default_ a cor do tema definido no seu `MaterialApp`, e caso passado um valor, sobreescreverá essa cor padrão do tema para a cor passada para a propriedade.
+
 ### `shape`
 
+Em alguns casos, você não quer que seu botão tenha o formato padrão retangular. Por exemplo, o design abaixo usa o botão com as bordas circulares:
+
+![CircleBorderButton](https://lh3.googleusercontent.com/zs0pAN0RKgDtNfdpdzr3zvhHK_lMOFcHeInh9_VpZO4qt2th5I3MPH5z7T56tp0Q9reVlCBHpVNYkfBkDdSai-VDRm5G_1wIT-Dg=w1064-v0 "Botão com bordas circulares")
+
+Para isso que a propriedade `shape` existe. Ela recebe um [`ShapeBorder`](https://api.flutter.dev/flutter/painting/ShapeBorder-class.html) que definirá a forma do botão.
+
+Os valores predefinidos mais comumente usados são:
+
+* [CircleBorder](https://api.flutter.dev/flutter/painting/CircleBorder-class.html)
+* [RoundedRectangleBorder](https://api.flutter.dev/flutter/painting/RoundedRectangleBorder-class.html)
+* [ContinuousRectangleBorder](https://api.flutter.dev/flutter/painting/ContinuousRectangleBorder-class.html)
+* [BeveledRectangleBorder](https://api.flutter.dev/flutter/painting/BeveledRectangleBorder-class.html)
+
 ### `textColor` e `textTheme`
+
+
