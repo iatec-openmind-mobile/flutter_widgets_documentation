@@ -278,4 +278,4 @@ Resultado:
 Podemos ver que temos resultados idênticos ao utilizar abordagens diferentes de controladores, isso vai depender muito da sua necessidade.
 
 ### 3 - Para mais exemplos, veja diretamente na doc oficial:
-[Veja mais aqui](https://flutter.dev/docs/cookbook/design/tabsl)
+[Veja mais aqui](https://flutter.dev/docs/cookbook/design/tabs)
