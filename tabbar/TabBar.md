@@ -3,7 +3,7 @@
 
 [Documentação oficial do widget](https://api.flutter.dev/flutter/material/TabBar-class.html)
 
-De acordo com a documentação oficial, é um widget do material design  que exibe uma linha horizontal de guias.
+De acordo com a documentação oficial, se trata de um widget do material design  que exibe uma linha horizontal de guias.
 
 Você pode usar o TabBar no seu [AppBar.bottom](https://api.flutter.dev/flutter/material/AppBar/bottom.html) e também pode usa-lo em conjunto com um [TabBarView](https://api.flutter.dev/flutter/material/TabBarView-class.html)
 
