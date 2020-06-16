@@ -5,11 +5,11 @@
 
 De acordo com a documentação oficial, é um widget do material design  que exibe uma linha horizontal de guias.
 
-Você pode uasar o TabBar no seu [AppBar.bottom](https://api.flutter.dev/flutter/material/AppBar/bottom.html) e tambem pode usa-lo em conjunto com um [TabBarView](https://api.flutter.dev/flutter/material/TabBarView-class.html)
+Você pode usar o TabBar no seu [AppBar.bottom](https://api.flutter.dev/flutter/material/AppBar/bottom.html) e também pode usa-lo em conjunto com um [TabBarView](https://api.flutter.dev/flutter/material/TabBarView-class.html)
 
-O TabBar precisa de um [TabController](https://api.flutter.dev/flutter/material/TabController-class.html), porém se você não informar esse controlador, você deverá informar um ancestral chamado [DefaultTabController](https://api.flutter.dev/flutter/material/DefaultTabController-class.html), ele disponibiliza um TabController para cada widget descedente :
+O [TabBar](https://api.flutter.dev/flutter/material/TabBar-class.html) precisa de um [TabController](https://api.flutter.dev/flutter/material/TabController-class.html), porém se você não informar esse controlador, você deverá informar um ancestral chamado [DefaultTabController](https://api.flutter.dev/flutter/material/DefaultTabController-class.html), ele disponibiliza um [TabController](https://api.flutter.dev/flutter/material/TabController-class.html) para cada widget descedente :
 
-Vejamos um exemplo do modo mais fácil, e esse modo é ulizar o [DefaultTabController](https://api.flutter.dev/flutter/material/DefaultTabController-class.html):
+Vejamos um exemplo do modo mais fácil e esse modo é fazer uso do [DefaultTabController](https://api.flutter.dev/flutter/material/DefaultTabController-class.html):
 
 ### 1 - TabBar - DefaultTabController
 
@@ -19,7 +19,7 @@ length: 3,// Importante lembrar que devemos informar o número de tabs que será
   child: // Aqui iremos informar como será construido o nosso TabTab.
 );
 ```
-O controlador serve para sincronizar o conteúdo exibido com o index do seu TabBar.
+O controlador serve para sincronizar o conteúdo exibido com o index do seu [TabBar](https://api.flutter.dev/flutter/material/TabBar-class.html).
 
 2ª Agora vejamos uma maneira de criar as guias ou se preferir pode chama-las de "tabs":
 ```dart
@@ -38,7 +38,7 @@ DefaultTabController(
   ),
 );
 ```
-3ª Então podemos criar o conteído de cada guia:
+3ª Então podemos criar o conteúdo de cada guia:
 ```dart
 TabBarView(
   children: [
@@ -116,7 +116,7 @@ Resultado:
 ![](../assets/tabbar_defaulttabcontroller.gif)
  
  
- Agora vejamos como construir um exemplo com o[TabController](https://api.flutter.dev/flutter/material/TabController-class.html)
+ Agora vejamos como construir um exemplo com o [TabController](https://api.flutter.dev/flutter/material/TabController-class.html)
  ### 2 - TabBar - TabController
  
  1ª Vamos ver como é que podemos criar esse controlador, para isso devemos criar um mixin com [SingleTickerProviderStateMixin](https://api.flutter.dev/flutter/widgets/SingleTickerProviderStateMixin-mixin.html):
@@ -134,7 +134,7 @@ Resultado:
  }
  ```
  
- 2ª Agora vamos criar nosso [TabBar]((https://api.flutter.dev/flutter/material/TabBar-class.html)):
+ 2ª Agora vamos criar nosso [TabBar](https://api.flutter.dev/flutter/material/TabBar-class.html):
   ```dart
   TabBar(
   unselectedLabelColor: Colors.grey,
@@ -275,13 +275,7 @@ Resultado:
 ![](../assets/tabbar_defaulttabcontroller.gif)
 
 
-Podemos ver que temos resultados identicos ao utilizar abordagens diferentes de controladores, isso vai depender muito da sua necessidade.
+Podemos ver que temos resultados idênticos ao utilizar abordagens diferentes de controladores, isso vai depender muito da sua necessidade.
 
 ### 3 - Para mais exemplos, veja diretamente na doc oficial:
 [Veja mais aqui](https://flutter.dev/docs/cookbook/design/tabsl)
- 
-
-
-    
-  
-
