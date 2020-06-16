@@ -14,7 +14,8 @@ Vejamos um exemplo do modo mais fácil e esse modo é fazer uso do [DefaultTabCo
 ### 1 - TabBar - DefaultTabController
 
 1ª Vamos ver como é que podemos criar esse controlador:
-```DefaultTabController(
+```dart
+DefaultTabController(
 length: 3,// Importante lembrar que devemos informar o número de tabs que será exibido.
   child: // Aqui iremos informar como será construido o nosso TabTab.
 );
