@@ -1,4 +1,8 @@
+[← Voltar](./)
+
 # Material buttons
+
+**Documentação:** [MaterialButton](https://api.flutter.dev/flutter/material/MaterialButton-class.html) | [RaisedButton](https://api.flutter.dev/flutter/material/RaisedButton-class.html) | [OutlineButton](https://api.flutter.dev/flutter/material/OutlineButton-class.html) | [FlatButton](https://api.flutter.dev/flutter/material/FlatButton-class.html)
 
 Provavelmente os três widgets de botões mais usados do Flutter são os três que se referem aos botões descritos pela especificação do Material, a saber, (1) FlatButton, (2) OutlineButton e (3) RaisedButton.
 
@@ -67,7 +71,7 @@ Como supracitado, um padrão comum no material para botões é usar um ícone e 
 
 ## Exemplo
 
-O seguinte exemplo cria um botão de compra como o da última figura, mas com um ícone.
+O seguinte exemplo cria um botão de compra como o da última figura, mas com um ícone. Você pode visualizá-lo [aqui](https://dartpad.dev/750c6ba6500bfb62adba6844f9aae287).
 
 ```dart
 RaisedButton.icon(
