@@ -57,4 +57,27 @@ Os valores predefinidos mais comumente usados são:
 
 ### `textColor` e `textTheme`
 
+Para estilizar o texto do botão, `textColor` e `textTheme` são o caminho. Enquanto o primeiro, obviamente, recebe um `Color` para sere usado como cor do texto do botão, o segundo recebe um `ButtonTextTheme` para lidar com as demais propriedades do texto. Vale lembrar que esses parâmetros não precisam ser necessariamente passadas, e caso não o sejam, será usado os valores padrões do tema do `MaterialApp`.
 
+## O construtor especial `.icon`
+
+Além do construtor normal dos botões, todos os três botões podem ser usados com o construtor `.icon()`. Os parâmetros desse construtor são as mesmas que a do construtor normal, com uma exceção: em vez de passar um `child`, nesse construtor é necessário passar um `icon` e um `label`.
+
+Como supracitado, um padrão comum no material para botões é usar um ícone e um texto dentro do botão. Este construtor serve justamente para isso. No parâmetro `icon` pode ser passado uma widget para servir de ícone. Normalmente essa widget vai ser um `Icon`, mas pode ser qualquer coisa. Da mesma forma, o parâmetro `label` será usado como "texto" do botão, e comumente será  uma widget `Text`, mas pode ser qualquer outra.
+
+## Exemplo
+
+O seguinte exemplo cria um botão de compra como o da última figura, mas com um ícone.
+
+```dart
+RaisedButton.icon(
+	icon: Icon(Icons.shopping_cart),
+	label: Text('FINALIZAR COMPRA'),
+	color: const Color(0xFF5D1049),
+	shape: RoundedRectangleBorder(
+		borderRadius: BorderRadius.circular(double.maxFinite),
+	),
+	onPressed: () => print('Botão pressionado!'),
+	onLongPress: () => print('Botão pressionado por mais tempo!'),
+),
+```
